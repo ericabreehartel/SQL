@@ -1,0 +1,24 @@
+First I created a store database.
+
+CREATE TABLE store (brand TEXT,type TEXT, sizes INTEGER, price INTEGER, quantity INTEGER);
+
+INSERT INTO store VALUES ("Gucci", "Tshirt", 2, 300, 4);
+INSERT INTO store VALUES ("Gucci", "Tank", 2, 100, 5);
+INSERT INTO store VALUES ("Prada", "Bracelet", 1, 300, 20);
+INSERT INTO store VALUES ("Gucci", "Necklace", 1, 100, 3);
+INSERT INTO store VALUES ("Prada", "Headband", 1, 50, 10);
+INSERT INTO store VALUES ("Gucci", "Jacket", 3, 400, 10);
+INSERT INTO store VALUES ("Steve Madden", "Shorts", 3, 50, 20);
+INSERT INTO store VALUES ("Gucci", "Jeans", 3, 100, 10);
+INSERT INTO store VALUES ("Steve Madden", "Sweatpants", 3, 70, 30);
+INSERT INTO store VALUES ("Gucci", "Outerwear", 3, 100, 100);
+INSERT INTO store VALUES ("Steve Madden", "Sweatshirt", 3, 50, 50);
+INSERT INTO store VALUES ("Steve Madden", "Scarves", 1, 20, 15);
+INSERT INTO store VALUES ("Gucci", "pjamas", 3, 50, 20);
+INSERT INTO store VALUES ("Gucci", "slippers", 12, 50, 12);
+INSERT INTO store VALUES ("Steve Madden", "dress shoes", 12, 30, 50);
+
+Then I displayed the data ordered by price and quantity.
+
+SELECT * FROM store ORDER BY price;
+SELECT * FROM store ORDER BY quantity;
